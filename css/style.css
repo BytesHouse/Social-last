@@ -1,0 +1,32 @@
+@import "_normalize.css";
+@import "_fonts.css";
+@import "_variables.css";
+@import "_vendor.css";
+@import "_global.css";
+@import "_overall.css";
+
+/* components imports */
+@import "./components/_header.css";
+@import "./components/_first.css";
+@import "./components/_become.css";
+@import "./components/_featured.css";
+@import "./components/_slider.css";
+@import "./components/_newsletter.css";
+@import "./components/_insp.css";
+@import "./components/_footer.css";
+
+
+@import "_media.css";
+
+/* Здесь настроим css стили для чата*/
+.holder-html-chat{ border: 1px solid #ccc;padding:10px;background-color: #fff;width: 600px; border-radius: 10px;}
+.html-chat-history{ max-width: 600px; overflow: auto;max-height: 300px;min-height: 300px; border: 1px solid #ccc;padding: 5px; border-radius: 5px;}
+.html-chat-js-name{ margin-top:10px; }
+.html-chat-js-input{ max-width: 580px;max-height: 100px; min-height: 100px;width: 100%;margin-top:10px; }
+.html-chat-js-button-holder{ margin-bottom: 0px;margin-top: 10px; }
+.html-chat-js-button-holder input{ width: 220px; height: 40px;
+	background-color: var(--accent-color); color: white; border: none; border-radius: 8px;}
+.html-chat-js-answer{ float:right; display: none; }
+.html-chat-js-answer a{ color: #777;font-size: 12px; font-family: cursive;}
+.html-chat-js-answer a:hover{ color: #338;font-size: 12px; font-family: cursive;}
+.html-chat-msg{ margin: 0px; }

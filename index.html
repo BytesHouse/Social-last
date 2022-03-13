@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мы вместе</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/doc/html_chat.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://comet-server.ru/doc/html_chat.css"></link>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+	</style>
+</head>
+<body>
+	<div class="site-container">
+		<div class="menu">
+			<button class="menu__close btn-reset" aria-label="close menu">
+				<span class="menu__close-line"></span>
+				<span class="menu__close-line"></span>
+			</button>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Наш чат</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Видео</a></li>
+					<!-- <li class="menu__item"><a href="#" class="menu__link">Newsletter</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Inspirations</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li> -->
+				</ul>
+			</nav>
+		</div>
+		<header class="header">
+			<div class="container header__container flex">
+				<ul class="header__social social">
+					<li class="social__item">
+						<a href="#" class="social__link social__link--fb" aria-label="Go to Facebook"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--tw" aria-label="Go to Twitter"></a>
+					</li>
+				</ul>
+				<a href="#" class="header__logo logo">Социальный проект "Мы вместе"</a>
+				<button class="header__burger burger btn-reset" aria-label="Open menu">
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</button>
+			</div>
+		</header>
+		<main class="main">
+			<section class="first">
+				<div class="container first__container">
+					<a href="#" class="first__link">Помощь</a>
+					<h1 class="first__title">Вместе, не смотря на километры расстояния</h1>
+					<p class="first__descr">Февраль 2022 года заставил семьи разделиться, друзей разъехаться, а многих людей оставить свой дом и начать новую жизнь в другой стране.
+						Кому-то пришлось поменять контакты, кто-то потерял связь со своими близкими, а мы хотим воссоединить эту связь и помочь каждому найти своих родных.</p>
+					<button class="first__btn btn-reset btn">Оставить заявку</button>
+					<div class="first__bottom">
+						<form action="/" class="first__form search-form">
+							<input type="search" class="search-form__field" placeholder="Найти истории...">
+							<button type="submit" class="search-form__button btn-reset" aria-label="Search stories"></button>
+						</form>
+						<div class="first__slider main-slider">
+							<div class="swiper-container">
+								<button class="first__slider-btn btn-left btn-reset"></button>
+								<button class="first__slider-btn btn-right btn-reset"></button>
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="main-slider__media">
+											<img src="/img/slider-1.jpg" alt="Mountains">
+										</div>
+										<p class="main-slider__text">
+											Счастливые семьи
+										</p>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-slider__media">
+											<button class="main-slider__play btn-reset"></button>
+											<video src="/videos/1.mp4" muted playsinline></video>
+										</div>
+										<p class="main-slider__text">
+											Прекрасные семьи
+										</p>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-slider__media">
+											<img src="/img/slider-1.jpg" alt="Mountains">
+										</div>
+										<p class="main-slider__text">
+											Снова вместе
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="become">
+				<div class="container">
+					<h2 class="section-title become__title">Оставь заявку и получи шанс снова обнять друзей и родных</h2>
+					<ul class="become__list">
+						<li class="become__item">
+							<img src="/img/become-1.jpg" alt="family" class="become__image">
+							<div class="become__text">Найдите друг друга<br>сквозь десятки стран</div>
+						</li>
+						<li class="become__item">
+							<img src="/img/become-2.jpg" alt="travel image" class="become__image">
+							<div class="become__text">Это происходит,<br>когда никто не видит</div>
+						</li>
+						<li class="become__item">
+							<img src="/img/become-3.jpg" alt="travel image" class="become__image">
+							<div class="become__text">Каждый против каждого.<br>Кто-то должен быть за.</div>
+						</li>
+						<li class="become__item">
+							<img src="/img/become-4.jpg" alt="travel image" class="become__image">
+							<div class="become__text">Не здесь,<br> но сейчас.</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="featured">
+				<div class="container featured__container">
+					<article class="featured__article blog-article">
+						<a href="#" class="blog-article__category">Мы вместе</a>
+						<h3 class="blog-article__title">Наш небольшой чат для общения</h3>
+						<p class="blog-article__descr">У каждого из нас в крови собрано несколько национальностей. Ситуация в мире сподвигла нас к передвижениям по миру, из-за чего пришлось отстраняться друг от друга и терять связи с близкими. Наш проект создан для того, чтобы никакая ситуация в мире больше не разлучала людей.  </p>
+						<!-- <a href="#" class="blog-article__link btn">Заполнить форму</a> -->
+					</article>
+					<div id="html-chat"></div>
+				</div>
+				<div class="featured__stories">
+					<h2 class="featured__title">Истории</h2>
+					<ul class="featured__list feature-list">
+						<li class="feature-list__item">
+							<article class="feature-list__article">
+								<div class="feature-list__image">
+									<img src="/img/ava-1.jpg" alt="woman">
+								</div>
+								<div class="feature-list__text">
+									<h3 class="feature-list__title">
+										<a href="#">Наши друзья оказались в Молдавии, узнали мы это благодаря "Мы вместе"</a>
+									</h3>
+									<time class="feature-list__time" datetime="2022-02-28 00:00">28 фев 2022</time>
+								</div>
+							</article>
+						</li>
+						<li class="feature-list__item">
+							<article class="feature-list__article">
+								<div class="feature-list__image">
+									<img src="/img/ava-2.jpg" alt="woman">
+								</div>
+								<div class="feature-list__text">
+									<h3 class="feature-list__title">
+										<a href="#">Оказавшись в другой стране, думал, что совсем один тут, но нашёл тут друзей из своего города</a>
+									</h3>
+									<time class="feature-list__time" datetime="2022-02-27 00:00">29 фев 2022</time>
+								</div>
+							</article>
+						</li>
+						<li class="feature-list__item">
+							<article class="feature-list__article">
+								<div class="feature-list__image">
+									<img src="/img/ava-3.jpg" alt="woman">
+								</div>
+								<div class="feature-list__text">
+									<h3 class="feature-list__title">
+										<a href="#">Просто спасибо, что вы помогаете!!! Теперь мы рядом))</a>
+									</h3>
+									<time class="feature-list__time" datetime="2022-02-26 00:00">26 фев 2022</time>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="featured-videos">
+				<div class="container featured-videos__container">
+					<h2 class="featured-videos__title section-title section-title--center">Видео (в разработке)</h2>
+					<p class="featured-videos__descr">Наши скромные репортажи о помощи </p>
+				</div>
+				<div class="slider-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide-1">
+							<button class="btn-reset slide-play"></button>
+							<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+						</div>
+						<div class="swiper-slide slide-2">
+							<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+						</div>
+						<div class="swiper-slide slide-3">
+							<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+						</div>
+						<div class="swiper-slide slide-4">
+							<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="newsletter">
+				<div class="container">
+					<div class="newsletter-content">
+						<div class="newsletter__text">
+							<h2 class="newsletter__title section-title">Заполняйте форму, а мы поможем найти ваших близких</h2>
+							<p class="newsletter__descr">Наши компетентные юристы работают по всему миру, поэтому большинство поисков заканчиваются улыбками семей, смехом друзей и обьятиями родных.
+								Оставляя заявку, вы моментально запускаете кропотлтвый механизм, где каждая частичка работает для достижения одной общей цели - объединить тех, чьи узы разорвали обстоятельства.</p>
+						</div>
+						<form action="#" class="newsletter__form subscribe-form">
+							<input type="hidden" name="admin_email[]" value="a.lihtgolt@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка">
+							<input type="text" name="name" placeholder="Имя" class="subscribe-form__field">
+							<input type="email" name="email" placeholder="Email" data-validate-field="email" class="subscribe-form__field">
+							<input type="tel" name="tel" placeholder="Номер телефона" data-validate-field="tel" class="subscribe-form__field">
+							<button class="btn btn-reset subscribe-form__btn">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="insp">
+				<div class="container">
+					<h2 class="section-title section-title--center insp__heading">Inspirations</h2>
+					<p class="insp__descr">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce
+						Canyon National Park ranks as three of the most magnificent & awe inspiring.</p>
+					<ul class="grid insp__list">
+						<li class="insp__item insp__item--big insp__item--1">
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-3">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="insp__item insp__item--2">
+							<button class="btn-reset insp__play" aria-label="Play video"></button>
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">Traveling To Barcelona</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="insp__item insp__item--bigheight insp__item--3">
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-3">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="insp__item insp__item--bigheight insp__item--4">
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-3">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="insp__item insp__item--bigheight insp__item--5">
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-3">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="insp__item insp__item--6">
+							<button class="btn-reset insp__play" aria-label="Play video"></button>
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-3">
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="insp__item insp__item--big insp__item--7">
+							<div class="insp__text">
+								<a href="#" class="insp__category">Destinations</a>
+								<h3 class="insp__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+								<ul class="insp__people">
+									<li class="insp__people-item">
+										<img src="/img/avatar-1.jpg" alt="human-1">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-2">
+									</li>
+									<li class="insp__people-item">
+										<img src="/img/avatar-2.jpg" alt="human-3">
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section> -->
+		</main>
+		<footer class="footer">
+			<div class="container footer__container flex">
+				<nav class="footer__column">
+					<h2 class="footer__title">Company</h2>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#" class="footer__link">About</a></li>
+						<!-- <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Security</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Driver Centre</a></li> -->
+					</ul>
+				</nav>
+				<nav class="footer__column">
+					<h2 class="footer__title">Information</h2>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#" class="footer__link">Our Story</a></li>
+						<!-- <li class="footer__item"><a href="#" class="footer__link">Recipes</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Nutrition</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Resources</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Newsletter</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Contact</a></li> -->
+					</ul>
+				</nav>
+				<nav class="footer__column">
+					<h2 class="footer__title">Information</h2>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#" class="footer__link">Custormer service</a></li>
+						<!-- <li class="footer__item"><a href="#" class="footer__link">Recommend a restaurant</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Signup a restaurant</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Jobs</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Terms of use</a></li> -->
+					</ul>
+				</nav>
+				<div class="footer__column">
+					<h2 class="footer__title">Subscribe Now</h2>
+					<form action="#" class="subs-form">
+						<input type="hidden" name="admin_email[]" value="a.lihtgolt@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка">
+						<input type="email" name="email" class="subs-form__field" data-validate-field="email" placeholder="Ваш email">
+						<button class="btn-reset btn subs-form__btn">Заявка</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container bottom-container flex">
+					<small class="footer__copy">© 2022 Мы вместе. All rights reserved.</small>
+					<ul class="footer__links">
+						<li class="footer__links-item"><a href="#" class="footer__link">Terms of Service</a></li>
+						<li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/inputmask.min.js"></script>
+	<script src="libs/just-validate.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+
+		/**
+		 * Чат работает на comet-server.ru
+		 * По любым вопросам обращайтесь support@comet-server.ru или на сайт comet-server.ru
+		 */
+		 $(document).ready(function()
+		 {
+				// Запуск api комет сервера
+				CometServer().start({dev_id: 3742 }) // Идентификатор разработчика на comet-server.ru
+
+				// Запуск чата. Передаём ему элемент в котором надо создать окно чата.
+				htmljs_Chat_Init( $("#html-chat") )
+		 });
+ </script>
+</body>
+</html>
